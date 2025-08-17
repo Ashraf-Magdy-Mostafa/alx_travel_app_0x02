@@ -6,3 +6,4 @@ mysqlclient  # or pymysql if preferred
 django-environ
 celery
 Faker
+python-dotenv

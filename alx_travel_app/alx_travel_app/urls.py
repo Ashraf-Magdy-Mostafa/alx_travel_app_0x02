@@ -20,5 +20,7 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger',
          cache_timeout=0), name='schema-swagger-ui'),
     # Optional: path('api/', include('listings.urls')) if you have it
-    path('', include('listings.urls'))
+    path('', include('listings.urls')),
+    path("api/", include("listings.urls")),  # exposes /api/payments/...
+
 ]
